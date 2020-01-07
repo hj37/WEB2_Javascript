@@ -11,12 +11,18 @@
       var coworkers = ["egoing","leezche"];
     </script>
     <h2>get</h2>
+
     <script>
-      document.write(coworkers[0]);
-      document.write(coworkers[1]);
-    </script>
+      var i = 0;
+        while(i < coworkers.length)
+        {
+          document.write(coworkers[i]+'<br>');
+          i++;
+        }
+        </script>
 
     <h2>add</h2>
+
     <script>
       coworkers.push('duru');
       coworkers.push('taeho');
@@ -24,12 +30,7 @@
 
     <h2>count</h2>
     <script>
-      var i = 0;
-      while(i < coworkers.length)
-      {
-          document.write(coworkers[i]);
-          i++;
-      }
+      document.write(coworkers.length);
     </script>
   </body>
 </html>
